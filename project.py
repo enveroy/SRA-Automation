@@ -8,9 +8,9 @@ from tqdm import tqdm
 import re
 
 
-Entrez.email = "alanjoshy101@gmail.com"  # NCBI requires an email
-Entrez.api_key = "e377eb28f7818aa92fb7eb66ef9960467c08"# Optional for higher access limits
-sra_toolkit_path = "/workspaces/162095528/sratoolkit.3.1.1-ubuntu64/bin"
+Entrez.email = "../....../......"  # NCBI requires an email
+Entrez.api_key = ".////............"# Optional for higher access limits
+sra_toolkit_path = ".,/.....//.........." # give sra toolkit path
 
 def search_sra(query, max_results=1):
     """
@@ -231,9 +231,9 @@ def main():
     print(f"\nDownloaded files: {downloaded_files}")
     paired_files = [(downloaded_files[i], downloaded_files[i + 1]) for i in range(0, len(downloaded_files), 2)]
 
-    output_dir = "/workspaces/162095528/fastqR"
-    trimmed_dir = "/workspaces/162095528/trimmed"
-    trimmed_fastqc_dir = "/workspaces/162095528/trimmed_fastqc"
+    output_dir = "/,,,....,,,,,,,,,."  # use approprate directory path
+    trimmed_dir = "/...m,.....,,....,,.."  # use approprate directory path
+    trimmed_fastqc_dir = "/,,.....,........."  # use approprate directory path
 
     # Step 1: Run FastQC on the downloaded files
     if not paired_files:
